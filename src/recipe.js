@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     burgerName: "Hamburger",
     ingredients: [
@@ -129,4 +129,21 @@ const data = [
   },
 ];
 
-export default data;
+export const basicIngredients = [
+  "Burger-Top",
+  "Burger-Bottom",
+  "Mayonnaise",
+  "Ketchup",
+  "Senf",
+  "Chilli-Cheese-Sauce",
+  "King-Sauce",
+  "Curry-Sauce",
+  "BBQ-Sauce",
+  "Salat",
+  "Tomato",
+  "Zweibeln",
+  "Gurken",
+  "Jalapeno",
+  "Kaese",
+  "Hamburger-Patty",
+];

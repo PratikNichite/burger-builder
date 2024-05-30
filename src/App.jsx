@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BurgerBuilder from "./components/BurgerBuilder";
 import "./App.css";
-import data from "./recipe.js";
+import { data, basicIngredients } from "./recipe.js";
 
 const randomBurgerIndex = Math.floor(Math.random() * data.length);
 const burger = data[randomBurgerIndex];
@@ -67,7 +67,10 @@ function App() {
       </div>
 
       <div>
-        <BurgerBuilder add={addIngredient} />
+        <BurgerBuilder
+          add={addIngredient}
+          basicIngredients={basicIngredients}
+        />
         <button className="submit-button" onClick={checkCombination}>
           Submit
         </button>
