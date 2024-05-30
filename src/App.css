@@ -42,6 +42,18 @@
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-ans-button {
+  background-color: #3b5068;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;

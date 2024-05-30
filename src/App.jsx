@@ -8,6 +8,7 @@ const burger = data[randomBurgerIndex];
 
 function App() {
   const [burgerIngredients, setBurgerIngredients] = useState([]);
+  const [showAns, setShowAns] = useState(false);
 
   const addIngredient = (ingredient) => {
     const ingId = Date.now();
@@ -71,9 +72,21 @@ function App() {
           add={addIngredient}
           basicIngredients={basicIngredients}
         />
-        <button className="submit-button" onClick={checkCombination}>
-          Submit
-        </button>
+        <div>
+          <button className="submit-button" onClick={checkCombination}>
+            Submit
+          </button>
+        </div>
+
+        <div>
+          {showAns && <p>{burger.ingredients.join(", ")}</p>}
+          <button
+            className="show-ans-button"
+            onClick={() => setShowAns((oldAns) => !oldAns)}
+          >
+            {showAns ? "Hide Answer" : "Show Answer"}
+          </button>
+        </div>
       </div>
     </div>
   );
